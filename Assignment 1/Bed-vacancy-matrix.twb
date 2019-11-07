@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0321.1733                               -->
+<workbook original-version='18.1' source-build='2019.1.2 (20191.19.0321.1733)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Output' inline='true' name='federated.1rck47w139rjkh18ddb5c1jlwjb1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Output' name='textscan.1kt580u0ey9r2q17mil0714ao4qf'>
+            <connection class='textscan' directory='E:/Study Material/Semester 5/INT 217/Assignment 1' filename='Output.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1kt580u0ey9r2q17mil0714ao4qf' name='Output.csv' table='[Output#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Beds' ordinal='0' />
+            <column datatype='integer' name='Hours' ordinal='1' />
+            <column datatype='string' name='Patient' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beds</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Beds]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>Beds</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hours]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>Hours</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>Patient</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column aggregation='Sum' datatype='integer' name='[Hours]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output' name='federated.1rck47w139rjkh18ddb5c1jlwjb1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rck47w139rjkh18ddb5c1jlwjb1'>
+            <column datatype='string' name='[Beds]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Hours]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Patient]' role='dimension' type='nominal' />
+            <column-instance column='[Beds]' derivation='None' name='[none:Beds:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hours]' derivation='None' name='[none:Hours:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Patient]' derivation='None' name='[none:Patient:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Patient:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Beds:nk]</rows>
+        <cols>[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Hours:ok]</cols>
+      </table>
+      <simple-id uuid='{D83BE165-91C7-4DC2-993D-C71874E91F68}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Patient:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Beds:nk]</field>
+            <field>[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Hours:ok]</field>
+            <field>[federated.1rck47w139rjkh18ddb5c1jlwjb1].[none:Patient:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{913D12E9-85BC-4057-BF6C-46EB415E8C90}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

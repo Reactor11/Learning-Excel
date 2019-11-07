@@ -1,0 +1,100 @@
+﻿Beds,Hours,Patient
+D,1,Unoccupied
+C,1,Unoccupied
+B,1,Unoccupied
+A,1,Unoccupied
+D,2,Unoccupied
+C,2,Unoccupied
+B,2,Unoccupied
+A,2,Unoccupied
+D,3,Unoccupied
+C,3,Unoccupied
+B,3,Unoccupied
+A,3,Unoccupied
+D,4,Unoccupied
+C,4,Unoccupied
+B,4,Unoccupied
+A,4,Unoccupied
+D,5,Unoccupied
+C,5,Unoccupied
+B,5,Unoccupied
+A,5,Unoccupied
+D,6,Unoccupied
+C,6,Unoccupied
+B,6,Unoccupied
+A,6,Unoccupied
+D,7,Unoccupied
+C,7,Unoccupied
+B,7,Unoccupied
+A,7,Unoccupied
+D,8,Unoccupied
+C,8,Unoccupied
+B,8,Person 2
+A,8,Person 1
+D,9,Person 4
+C,9,Person 3
+B,9,Person 2
+A,9,Person 5
+A,9,Person 1
+D,10,Person 4
+C,10,Unoccupied
+B,10,Person 2
+A,10,Person 9
+A,10,Person 5
+D,11,Person 4
+C,11,Unoccupied
+B,11,Person 2
+A,11,Person 9
+D,12,Person 4
+C,12,Unoccupied
+B,12,Person 2
+A,12,Person 9
+D,13,Person 4
+C,13,Unoccupied
+B,13,Person 2
+A,13,Person 9
+D,14,Person 4
+C,14,Unoccupied
+B,14,Unoccupied
+A,14,Person 9
+D,15,Person 4
+C,15,Unoccupied
+B,15,Person 6
+A,15,Person 9
+D,16,Person 4
+C,16,Unoccupied
+B,16,Person 6
+A,16,Person 9
+D,17,Person 4
+C,17,Unoccupied
+B,17,Person 6
+A,17,Person 8
+D,18,Person 4
+C,18,Unoccupied
+B,18,Person 7
+B,18,Person 6
+A,18,Person 8
+D,19,Person 4
+C,19,Unoccupied
+B,19,Person 7
+A,19,Person 8
+D,20,Person 4
+C,20,Unoccupied
+B,20,Person 7
+A,20,Person 8
+D,21,Person 4
+C,21,Unoccupied
+B,21,Person 7
+A,21,Person 8
+D,22,Person 4
+C,22,Unoccupied
+B,22,Person 10
+A,22,Person 8
+D,23,Person 4
+C,23,Unoccupied
+B,23,Person 10
+A,23,Person 8
+D,24,Person 4
+C,24,Unoccupied
+B,24,Unoccupied
+A,24,Unoccupied
